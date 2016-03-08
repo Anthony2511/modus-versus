@@ -1,0 +1,36 @@
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+
+$mainColor: #62a29e;
+$lightMainColor: #76c7c0;
+$darkMainColor: #528b86;
+
+$focusColor: #e8645a;
+$darkFocusColor: #e2534b;
+$backgroundColorFocus: #3f4646;
+$colorGlyphs : white;
+$backgroundSlideNoActive: #b0b8b9;
+$colorTransparent :rgba(255, 255, 255, 0);
+
+$mainBackgroundColor: #f3f3f3;
+$headerBackgroundColor: $lightMainColor;
+
+$headingTextColor: #7f8c8c;
+$laborTextColor: #777777;
+$menuTextColor: white;
+$colorBorderService :#e5e6e6;
+
+$linkColor: #e1524b;
+$hoverLinkColor: darken( $linkColor, 25% );
+$backgroundColorNavNext : #98a3a3;
+$colorBorderNavNext: #7f8c8c;
+
+$backgroundcolorServices : #ececec;
+$colorTitleFocus: #8e9999;
+$colorView: white;
+$backgroundColorImage: #c1c7c8;

@@ -1,0 +1,63 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objectss/_services.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+ .services{
+     margin-bottom: 50px;
+     &__focus{
+         width: $containerWidth;
+         margin: 100px auto;
+         padding: 20px;
+         &__text{
+             font-size: 15px;
+         }
+         &__link{
+             padding: 10px 40px;
+             float: right;
+             position: relative;
+             bottom: 60px;
+         }
+     }
+     &__block{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         width: $containerWidth;
+         margin: 0 auto;
+         &__element{
+             width: ($containerWidth/4);
+             &:not(:last-child){
+                 margin-right: 30px;
+             }
+             & h3{
+                 margin: 50px 0;
+             }
+                 &__icon-thumb::before{
+                     display: block;
+                     margin-bottom: 30px;
+                 }
+                 &__icon-key::before{
+                     display: block;
+                     margin-bottom: 30px;
+                 }
+                 &__icon-flag::before{
+                     display: block;
+                     margin-bottom: 30px;
+                 }
+                 &__last-icon::before{
+                     display: block;
+                     margin-bottom: 30px;
+                 }
+             &__text{
+                 margin-bottom: 50px;
+                 padding: 0 30px;
+             }
+             &__button{
+                 padding: 20px 70px;
+             }
+             }
+         }
+     }

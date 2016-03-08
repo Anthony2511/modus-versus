@@ -1,0 +1,85 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_services.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.services{
+    &__focus{
+        background-color: $backgroundcolorServices;
+        font-family: $openSansStack;
+        line-height: 3em;
+        border-radius: 4px;
+        &__title{
+            font-size: 25px;
+            font-weight: 600;
+            color: $colorTitleFocus;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__link{
+            background-color: $focusColor;
+            color: $colorView;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border-bottom: 4px solid $darkFocusColor;
+        }
+    }
+    &__block{
+        &__element{
+            background-color: $menuTextColor;
+            text-align: center;
+            border-radius: 4px;
+            border-bottom: 4px solid $colorBorderService;
+            & h3{
+                text-transform: uppercase;
+                color: $headingTextColor;
+                font: 600 15px $openSansStack;
+            }
+                &__icon-thumb::before{
+                    content: "";
+                    font: normal 6rem $glyphs;
+                    color: $focusColor;
+                }
+                &__icon-key::before{
+                    content: "";
+                    font: normal 6rem $glyphs;
+                    color: $lightMainColor;
+                }
+                &__icon-flag::before{
+                    content: "";
+                    font: normal 6rem $glyphs;
+                    color: $lightMainColor;
+                }
+                &__last-icon::before{
+                    content: "";
+                    font: normal 6rem $glyphs;
+                    color: $lightMainColor;
+                }
+            &__text{
+                color: $laborTextColor;
+                font-size: 13px;
+                line-height: 1.5em;
+            }
+            &__button{
+                background-color: $lightMainColor;
+                color: $menuTextColor;
+                font-size: 15px;
+                border-radius: 4px;
+                border-bottom: 4px solid $mainColor;
+                &--is-active{
+                    background-color: $focusColor;
+                    border-bottom: 4px solid $darkFocusColor;
+                }
+            }
+            & a{
+                text-decoration: none;
+                }
+            }
+        }
+    }

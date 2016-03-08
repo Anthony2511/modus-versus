@@ -1,0 +1,46 @@
+.slider{
+    height: 70vh;
+}
+.slide{
+    &__slide-active{
+        color: $menuTextColor;
+        font-family: $openSansStack;
+        &__title{
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: $darkFocusColor;
+            border-radius: 4px;
+        }
+        &__text{
+            line-height: 1.5em;
+            text-align: center;
+            background-color: $backgroundColorFocus;
+            font-size: 14px;
+            font-weight: normal;
+            border-radius: 5px;
+        }
+    }
+}
+.nav{
+    &__slide-previous{
+        &::before{
+            font-size: 40px;
+            font-family: $glyphs;
+            background-color: $focusColor;
+            border-radius: 0 3px 3px 0;
+            border-bottom: 4px solid $darkFocusColor;
+            color: $colorGlyphs;
+        }
+    }
+    &__slide-next{
+        &::before{
+            font-size: 40px;
+            font-family: $glyphs;
+            background-color: $focusColor;
+            border-radius: 0 3px 3px 0;
+            border-top: 4px solid $darkFocusColor;
+            color: $colorGlyphs;
+        }
+    }
+}
