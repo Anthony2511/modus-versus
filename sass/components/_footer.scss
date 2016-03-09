@@ -4,16 +4,10 @@ footer{
     line-height: 2rem;
     font-size: 1.3rem;
     & aside{
-        padding-top: 4.8rem;
         & h2{
             font-size: 0;
-            display: inline-block;
-            margin-left: 400px;
             &::before{
                 content: "";
-                display: inline-block;
-                width: 35rem;
-                height: 2.2rem;
                 background: transparent url("../assets/img/logo.svg") no-repeat scroll left center;
             }
         }
@@ -28,28 +22,25 @@ footer{
 .primary__cols__sitemap h3,
 .primary__cols__community h3,
 .primary__cols__blog h3{
-font-weight: bold;
-font-size: 2rem;
-color: $backgroundColorFocus;
-min-width: 17rem;
-margin-bottom: 3.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $backgroundColorFocus;
 }
 .primary__cols__blog h3{
-color: white;
-font-style: italic;
-font-weight: normal;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
 & a{
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-font-weight: bold;
-font-style: normal;
-}
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    }
 }
 .primary__cols__sitemap,
 .primary__cols__community{
     & li{
-    margin-bottom: 1.4rem;
     line-height: 1.5rem;
     & a{
         color: white;
@@ -60,7 +51,6 @@ font-style: normal;
             font-family: $openSansStack;
             color: white;
             font-size: 1.4rem;
-            margin-right: .9rem;
             }
         }
     }
@@ -80,133 +70,41 @@ font-style: normal;
     }
 }
 .secondary{
-background-color: $darkMainColor;
+    background-color: $darkMainColor;
 }
 .secondary__legals a{
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 .secondary__socials{
-
-& li{
-display: inline-block;
-}
-& li a{
-text-decoration: none;
-font-size: 0;
-}& li a:before{
-font-family: $glyphs;
-color: white;
-font-size: 2.6rem;
-}
-&__social-facebook:before{
-content: '\f09a';
-}
-&__social-twitter:before{
-content: '\f099';
-}
-&__social-googleplus:before{
-content: '\f0d5';
-}
-&__rss-feed:before{
-content: '\f09e';
-}
-}
-
-footer aside section{
-display: inline-block;
-}
-.primary{
-    width: 117rem;
-    margin: 0 auto;
-    &__cols{
-        position: relative;
-        bottom: 2.8rem;
+    & li a{
+    text-decoration: none;
+    font-size: 0;
+    }& li a:before{
+    font-family: $glyphs;
+    color: white;
+    font-size: 2.6rem;
+    }
+    &__social-facebook:before{
+    content: '\f09a';
+    }
+    &__social-twitter:before{
+    content: '\f099';
+    }
+    &__social-googleplus:before{
+    content: '\f0d5';
+    }
+    &__rss-feed:before{
+    content: '\f09e';
     }
 }
-.primary,
-.primary__cols{
-height: 300px;
-}
-.primary__cols__contact{
-max-width: 37rem;
-margin-right: 8rem;
-& h3{
-display: none;
-}
-& p{
-margin-top: 5.4rem;
-margin-bottom: 3.5rem;
-}
-& dl{
-margin-bottom: 6rem;
-}
-& dt{
-margin-top: 1rem;
-margin-right: 2rem;
-display: inline-block;
-}
-& dd{
-display: inline-block;
-}
-}
-.primary__cols__sitemap,
-.primary__cols__community,
 .primary__cols__blog{
-vertical-align: top;
-
-}
-.primary__cols__blog-articles{
-margin-right: 0;
-}
-.primary__cols__blog{
-& li a{
-    height: 7rem;
-    margin-bottom: 2rem;
-    display: block;
-& li a:before{
-content: "";
-display: block;
-clear: both;
-}
-}
-& img{
-border-radius: 4px;
-float: left;
-margin-right: 2rem;
-}
-& strong{
-vertical-align: top;
-}
-& time{
-vertical-align: top;
-display: block;
-}
-}
-.secondary{
-height: 5.2rem;
+    & img{
+    border-radius: 4px;
+    }
 }
 .secondary__contener{
-max-width: 117rem;
-margin: 0 auto;
-&:before{
-content: "";
-display: block;
-clear: both;
-}
-}
-.secondary__legals{
-display: inline-block;
-position: relative;
-top: 1.6rem;
-}
-.secondary__socials{
-ul{
-float: right;
-position: relative;
-top: -.35rem;
-& li{
-margin-left: 2rem;
-}
-}
+    &:before{
+    content: "";
+    }
 }
