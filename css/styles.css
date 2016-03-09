@@ -354,11 +354,64 @@ html {
 
 /* Modus Versus Slicing
  *
- * /sass/cobjects/_why.scss - Non-cosmetic styles for slider
+ * /sass/objects/_why.scss - Non-cosmetic styles for slider
  *
  * coded by leny@flatLand!
  * started at 16/02/2016
  */
+.why {
+  width: 117rem;
+  margin: 100px auto; }
+  .why__title {
+    display: flex;
+    flex-direction: column; }
+    .why__title__modus {
+      margin-bottom: 10px; }
+    .why__title__span {
+      font-size: 11px;
+      margin-bottom: 100px; }
+  .why__img {
+    width: 58.5rem;
+    padding: 50px 0 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .why__img img {
+      width: 58.5rem;
+      padding: 0 5px; }
+  .why__block {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0; }
+    .why__block__element {
+      width: 39rem; }
+      .why__block__element:nth-of-type(2) {
+        margin: 0 150px; }
+      .why__block__element h3 {
+        margin-bottom: 50px; }
+      .why__block__element__cite p {
+        padding: 40px 50px;
+        margin-bottom: 20px; }
+  .why__clients__title {
+    float: left; }
+  .why__clients__nav {
+    float: right; }
+    .why__clients__nav__previous {
+      margin-right: 50px; }
+      .why__clients__nav__previous::before {
+        display: inline-block;
+        padding: 5px 10px; }
+    .why__clients__nav__next::before {
+      display: inline-block;
+      padding: 5px 10px; }
+  .why__clients__img {
+    width: 117rem; }
+    .why__clients__img li + li {
+      margin-left: 40px; }
+    .why__clients__img li {
+      margin: 0 auto;
+      display: inline-block; }
+
 /* Modus Versus Slicing
  *
  * /sass/objects/_footer.scss - Non-cosmetic styles for slider
@@ -657,72 +710,41 @@ html {
  * started at 16/02/2016
  */
 .why {
-  width: 117rem;
-  margin: 100px auto;
   text-align: center;
   font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .why__title {
-    display: flex;
-    flex-direction: column; }
-    .why__title__modus {
-      font-size: 40px;
-      text-transform: uppercase;
-      color: #e1524b;
-      font-weight: 600;
-      margin-bottom: 10px; }
-    .why__title__span {
-      font-size: 11px;
-      margin-bottom: 100px; }
+  .why__title__modus {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #e1524b;
+    font-weight: 600; }
+  .why__title__span {
+    font-size: 11px; }
   .why__img {
     background-color: #c1c7c8;
-    width: 58.5rem;
-    padding: 50px 0 5px;
-    margin: 0 auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; }
+    border-radius: 10px; }
     .why__img img {
-      width: 58.5rem;
-      border-radius: 10px;
-      padding: 0 5px; }
-  .why__block {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0; }
-    .why__block__element {
-      width: 39rem; }
-      .why__block__element:nth-of-type(2) {
-        margin: 0 150px; }
-      .why__block__element h3 {
-        font-weight: bold;
-        font-size: 17px;
-        margin-bottom: 50px; }
-      .why__block__element a {
-        text-decoration: underline;
-        color: red; }
-      .why__block__element__cite p {
-        background-color: white;
-        padding: 40px 50px;
-        margin-bottom: 20px; }
+      border-radius: 10px; }
+  .why__block__element h3 {
+    font-weight: bold;
+    font-size: 17px; }
+  .why__block__element a {
+    text-decoration: underline;
+    color: red; }
+  .why__block__element__cite p {
+    background-color: white; }
   .why__clients__title {
     font-weight: bold;
-    font-size: 17px;
-    float: left; }
+    font-size: 17px; }
   .why__clients__nav {
-    font-size: 0;
-    float: right; }
-    .why__clients__nav__previous {
-      margin-right: 50px; }
-      .why__clients__nav__previous::before {
-        font-size: 20px;
-        font-family: "Glyphs";
-        background-color: #98a3a3;
-        border-radius: 3px;
-        border-bottom: 4px solid #7f8c8c;
-        color: white;
-        content: "";
-        display: inline-block;
-        padding: 5px 10px; }
+    font-size: 0; }
+    .why__clients__nav__previous::before {
+      font-size: 20px;
+      font-family: "Glyphs";
+      background-color: #98a3a3;
+      border-radius: 3px;
+      border-bottom: 4px solid #7f8c8c;
+      color: white;
+      content: ""; }
     .why__clients__nav__next::before {
       font-size: 20px;
       font-family: "Glyphs";
@@ -730,16 +752,7 @@ html {
       border-radius: 3px;
       border-bottom: 4px solid #e2534b;
       color: white;
-      content: "";
-      display: inline-block;
-      padding: 5px 10px; }
-  .why__clients__img {
-    width: 117rem; }
-    .why__clients__img li + li {
-      margin-left: 40px; }
-    .why__clients__img li {
-      margin: 0 auto;
-      display: inline-block; }
+      content: ""; }
 
 footer {
   background: #76c7c0 url("../assets/img/footer-bcg-pattern.png") top left repeat-x;
