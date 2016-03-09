@@ -36,6 +36,9 @@
             text-align: center;
             border-radius: 4px;
             border-bottom: 4px solid $colorBorderService;
+            &:hover &__icon-thumb::before, &:hover &__icon-key::before, &:hover &__icon-flag::before, &:hover &__last-icon::before {
+                    color: $darkFocusColor;
+            }
             & h3{
                 text-transform: uppercase;
                 color: $headingTextColor;
@@ -44,7 +47,7 @@
                 &__icon-thumb::before{
                     content: "";
                     font: normal 6rem $glyphs;
-                    color: $focusColor;
+                    color: $lightMainColor;
                 }
                 &__icon-key::before{
                     content: "";
@@ -72,9 +75,9 @@
                 font-size: 15px;
                 border-radius: 4px;
                 border-bottom: 4px solid $mainColor;
-                &--is-active{
-                    background-color: $focusColor;
-                    border-bottom: 4px solid $darkFocusColor;
+                &:hover {
+                    background-color: $darkFocusColor;
+                    border-bottom: $hoverLinkColor;
                 }
             }
             & a{

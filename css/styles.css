@@ -1,0 +1,931 @@
+@charset "UTF-8";
+/* Modus Versus Slicing
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.hidden {
+  display: none; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+html {
+  background: #f3f3f3;
+  font: normal 62.5%/1.25 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777777; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_wrapper.scss - Non-cosmetic styles for wrapper
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.wrapper {
+  position: relative; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_header.scss - Non-cosmetic styles for header
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.header {
+  margin: 0 auto 2.5rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.scss - Non-cosmetic styles for topbar
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.topbar {
+  min-height: 8rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.logo.scss - Non-cosmetic styles for logo
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.logo {
+  position: relative;
+  width: 19.2rem;
+  margin: 0 auto;
+  left: -48.9rem; }
+  .logo__link {
+    height: 2.2rem; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.main-nav.scss - Non-cosmetic styles for main-nav
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.main-nav {
+  position: absolute;
+  width: 96rem;
+  top: 2.4rem;
+  right: 50%;
+  transform: translateX(58.5rem); }
+  .main-nav__list--is-dropdown {
+    position: absolute;
+    width: 20rem;
+    left: 0;
+    top: 4.5rem; }
+  .main-nav__elt--has-dropdown {
+    position: relative; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_topbar.main-nav.search-form.scss - Non-cosmetic styles for search-form
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.search-form {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .search-form__toggle {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0; }
+  .search-form__form-elt {
+    position: absolute;
+    display: none;
+    min-width: 20rem;
+    top: 5rem;
+    right: 0; }
+  .search-form--js-is-open .search-form__form-elt {
+    display: block; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_slider.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.slider {
+  background: url("../assets/img/Chat.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.slide__slide-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .slide__slide-active__title {
+    margin-top: 200px;
+    padding: 0 20px; }
+  .slide__slide-active__text {
+    margin-top: 10px;
+    padding: 10px 40px;
+    width: 450px; }
+
+.slide__slide-not-active {
+  display: none; }
+
+.nav {
+  font-size: 0; }
+  .nav__slide-previous {
+    position: absolute;
+    top: 350px; }
+    .nav__slide-previous::before {
+      content: "\f100";
+      display: inline-block;
+      padding: 10px; }
+  .nav__slide-next {
+    position: absolute;
+    top: 350px;
+    right: 0; }
+    .nav__slide-next::before {
+      content: "\f100";
+      display: inline-block;
+      transform: rotate(180deg);
+      padding: 10px; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/objectss/_services.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.services {
+  margin-bottom: 50px; }
+  .services__focus {
+    width: 117rem;
+    margin: 100px auto;
+    padding: 20px; }
+    .services__focus__text {
+      font-size: 15px; }
+    .services__focus__link {
+      padding: 10px 40px;
+      float: right;
+      position: relative;
+      bottom: 60px; }
+  .services__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 117rem;
+    margin: 0 auto; }
+    .services__block__element {
+      width: 29.25rem; }
+      .services__block__element:not(:last-child) {
+        margin-right: 30px; }
+      .services__block__element h3 {
+        margin: 50px 0; }
+      .services__block__element__icon-thumb::before {
+        display: block;
+        margin-bottom: 30px; }
+      .services__block__element__icon-key::before {
+        display: block;
+        margin-bottom: 30px; }
+      .services__block__element__icon-flag::before {
+        display: block;
+        margin-bottom: 30px; }
+      .services__block__element__last-icon::before {
+        display: block;
+        margin-bottom: 30px; }
+      .services__block__element__text {
+        margin-bottom: 50px;
+        padding: 0 30px; }
+      .services__block__element__button {
+        padding: 20px 70px; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/cobjects/_why.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_footer.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.scss - Design styles for topbar
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.topbar {
+  padding: 2.8rem 0 0;
+  background: #76c7c0 url("../assets/img/navbar-bcg-pattern.png") bottom left repeat-x; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.logo.scss - Design styles for logo
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.logo__link {
+  display: block;
+  background: transparent url("../assets/img/logo.svg") center left no-repeat;
+  background-size: contain;
+  font-size: 0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.main-nav.scss - Design styles for main-nav
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.main-nav {
+  padding-right: 5.6rem;
+  text-align: right; }
+  .main-nav__list {
+    display: inline-block;
+    font-size: 0; }
+    .main-nav__list--is-dropdown {
+      display: none;
+      padding: .5rem;
+      background: #e2534b;
+      border-radius: .5rem; }
+      .main-nav__list--is-dropdown::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -1.2rem;
+        left: 1.2rem;
+        border: .6rem solid transparent;
+        border-bottom-color: #e2534b; }
+      .main-nav__list--is-dropdown::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -4.5rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1; }
+  .main-nav__elt {
+    display: inline-block; }
+    .main-nav__elt + .main-nav__elt {
+      margin-left: 1.4rem; }
+    .main-nav__elt--has-dropdown:hover > .main-nav__link {
+      background: #e8645a;
+      box-shadow: 0 0.3rem 0 #e2534b; }
+    .main-nav__elt--has-dropdown:hover .main-nav__list--is-dropdown {
+      display: block; }
+    .main-nav__elt--is-sub-elt {
+      display: block;
+      border-radius: .5rem;
+      background: #e8645a; }
+      .main-nav__elt--is-sub-elt + .main-nav__elt--is-sub-elt {
+        margin-left: 0;
+        margin-top: .5rem; }
+      .main-nav__elt--is-sub-elt::before {
+        content: none; }
+      .main-nav__elt--is-sub-elt:hover {
+        background: #76c7c0; }
+  .main-nav__link {
+    display: block;
+    padding: 1rem 1.4rem;
+    border-radius: .4rem;
+    font: 600 1.4rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase; }
+    .main-nav__link:hover {
+      background: #e8645a;
+      box-shadow: 0 0.3rem 0 #e2534b; }
+    .main-nav__link--is-active {
+      background: #62a29e;
+      box-shadow: 0 0.3rem 0 #528b86; }
+    .main-nav__link--is-dropdown-head::before {
+      content: "";
+      margin-right: .8rem;
+      font: normal 1.4rem "Glyphs"; }
+    .main-nav__link--is-sub-link {
+      padding: 1rem;
+      box-shadow: none;
+      font: 600 1.3rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: none;
+      text-align: left; }
+      .main-nav__link--is-sub-link::before {
+        content: "";
+        margin-right: .8rem;
+        font: normal 1.3rem "Glyphs"; }
+      .main-nav__link--is-sub-link:hover {
+        background: #76c7c0; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_topbar.main-nav.search-form.scss - Non-cosmetic styles for search-form
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.search-form__toggle {
+  padding: .8rem 1.4rem .9rem;
+  border-radius: .4rem;
+  font-size: 0;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+  .search-form__toggle::before {
+    content: "";
+    font: normal 1.6rem/1 "Glyphs"; }
+  .search-form__toggle:hover {
+    background: #e8645a;
+    box-shadow: 0 0.3rem 0 #e2534b; }
+
+.search-form__form-elt {
+  padding: .5rem;
+  background: #e2534b;
+  border-radius: .4rem; }
+  .search-form__form-elt::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: -1.2rem;
+    right: 1.7rem;
+    border: .6rem solid transparent;
+    border-bottom-color: #e2534b; }
+
+.search-form__input {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  padding: .25rem .5rem;
+  background: white;
+  border-radius: .2rem;
+  border: 0;
+  font: normal 1.6rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777777; }
+  .search-form__input:focus {
+    outline: 0; }
+
+.search-form__button {
+  display: block;
+  width: 100%;
+  padding: .5rem .5rem;
+  background: #76c7c0;
+  border-radius: .2rem;
+  border: 0;
+  font: normal 1.6rem/1 "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  cursor: pointer; }
+  .search-form__button:hover {
+    background: #62a29e; }
+
+.slider {
+  height: 70vh; }
+
+.slide__slide-active {
+  color: white;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .slide__slide-active__title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #e2534b;
+    border-radius: 4px; }
+  .slide__slide-active__text {
+    line-height: 1.5em;
+    text-align: center;
+    background-color: #3f4646;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px; }
+
+.nav__slide-previous::before {
+  font-size: 40px;
+  font-family: "Glyphs";
+  background-color: #e8645a;
+  border-radius: 0 3px 3px 0;
+  border-bottom: 4px solid #e2534b;
+  color: white; }
+
+.nav__slide-next::before {
+  font-size: 40px;
+  font-family: "Glyphs";
+  background-color: #e8645a;
+  border-radius: 0 3px 3px 0;
+  border-top: 4px solid #e2534b;
+  color: white; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_services.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.services__focus {
+  background-color: #ececec;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 3em;
+  border-radius: 4px; }
+  .services__focus__title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #8e9999; }
+  .services__focus__text {
+    font-size: 15px; }
+  .services__focus__link {
+    background-color: #e8645a;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-bottom: 4px solid #e2534b; }
+
+.services__block__element {
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom: 4px solid #e5e6e6; }
+  .services__block__element:hover .services__block__element__icon-thumb::before, .services__block__element:hover .services__block__element__icon-key::before, .services__block__element:hover .services__block__element__icon-flag::before, .services__block__element:hover .services__block__element__last-icon::before {
+    color: #e2534b; }
+  .services__block__element h3 {
+    text-transform: uppercase;
+    color: #7f8c8c;
+    font: 600 15px "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .services__block__element__icon-thumb::before {
+    content: "";
+    font: normal 6rem "Glyphs";
+    color: #76c7c0; }
+  .services__block__element__icon-key::before {
+    content: "";
+    font: normal 6rem "Glyphs";
+    color: #76c7c0; }
+  .services__block__element__icon-flag::before {
+    content: "";
+    font: normal 6rem "Glyphs";
+    color: #76c7c0; }
+  .services__block__element__last-icon::before {
+    content: "";
+    font: normal 6rem "Glyphs";
+    color: #76c7c0; }
+  .services__block__element__text {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.5em; }
+  .services__block__element__button {
+    background-color: #76c7c0;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    border-bottom: 4px solid #62a29e; }
+    .services__block__element__button:hover {
+      background-color: #e2534b;
+      border-bottom: #941e19; }
+  .services__block__element a {
+    text-decoration: none; }
+
+/* Modus Versus Slicing
+ *
+ * /sass/components/_why.scss - Non-cosmetic styles for slider
+ *
+ * coded by leny@flatLand!
+ * started at 16/02/2016
+ */
+.why {
+  width: 117rem;
+  margin: 100px auto;
+  text-align: center;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .why__title {
+    display: flex;
+    flex-direction: column; }
+    .why__title__modus {
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #e1524b;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .why__title__span {
+      font-size: 11px;
+      margin-bottom: 100px; }
+  .why__img {
+    background-color: #c1c7c8;
+    width: 58.5rem;
+    padding: 50px 0 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; }
+    .why__img img {
+      width: 58.5rem;
+      border-radius: 10px;
+      padding: 0 5px; }
+  .why__block {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0; }
+    .why__block__element {
+      width: 39rem; }
+      .why__block__element:nth-of-type(2) {
+        margin: 0 150px; }
+      .why__block__element h3 {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 50px; }
+      .why__block__element a {
+        text-decoration: underline;
+        color: red; }
+      .why__block__element__cite p {
+        background-color: white;
+        padding: 40px 50px;
+        margin-bottom: 20px; }
+  .why__clients__title {
+    font-weight: bold;
+    font-size: 17px;
+    float: left; }
+  .why__clients__nav {
+    font-size: 0;
+    float: right; }
+    .why__clients__nav__previous {
+      margin-right: 50px; }
+      .why__clients__nav__previous::before {
+        font-size: 20px;
+        font-family: "Glyphs";
+        background-color: #98a3a3;
+        border-radius: 3px;
+        border-bottom: 4px solid #7f8c8c;
+        color: white;
+        content: "";
+        display: inline-block;
+        padding: 5px 10px; }
+    .why__clients__nav__next::before {
+      font-size: 20px;
+      font-family: "Glyphs";
+      background-color: #e8645a;
+      border-radius: 3px;
+      border-bottom: 4px solid #e2534b;
+      color: white;
+      content: "";
+      display: inline-block;
+      padding: 5px 10px; }
+  .why__clients__img {
+    width: 117rem; }
+    .why__clients__img li + li {
+      margin-left: 40px; }
+    .why__clients__img li {
+      margin: 0 auto;
+      display: inline-block; }
+
+footer {
+  background: #76c7c0 url("../assets/img/footer-bcg-pattern.png") top left repeat-x;
+  color: white;
+  line-height: 2rem;
+  font-size: 1.3rem; }
+  footer aside {
+    padding-top: 4.8rem; }
+    footer aside h2 {
+      font-size: 0;
+      display: inline-block;
+      margin-left: 400px; }
+      footer aside h2::before {
+        content: "";
+        display: inline-block;
+        width: 35rem;
+        height: 2.2rem;
+        background: transparent url("../assets/img/logo.svg") no-repeat scroll left center; }
+
+.primary__cols__contact dd a {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none; }
+
+.primary__cols__sitemap h3,
+.primary__cols__community h3,
+.primary__cols__blog h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #3f4646;
+  min-width: 17rem;
+  margin-bottom: 3.5rem; }
+
+.primary__cols__blog h3 {
+  color: white;
+  font-style: italic;
+  font-weight: normal; }
+  .primary__cols__blog h3 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal; }
+
+.primary__cols__sitemap li,
+.primary__cols__community li {
+  margin-bottom: 1.4rem;
+  line-height: 1.5rem; }
+  .primary__cols__sitemap li a,
+  .primary__cols__community li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem; }
+    .primary__cols__sitemap li a::before,
+    .primary__cols__community li a::before {
+      content: ">";
+      font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: white;
+      font-size: 1.4rem;
+      margin-right: .9rem; }
+
+.primary__cols__blog a {
+  text-decoration: none; }
+
+.primary__cols__blog img {
+  border-radius: 4px; }
+
+.primary__cols__blog strong {
+  color: white; }
+
+.primary__cols__blog time {
+  color: #3f4646; }
+
+.secondary {
+  background-color: #528b86; }
+
+.secondary__legals a {
+  color: white;
+  text-decoration: none; }
+
+.secondary__socials li {
+  display: inline-block; }
+
+.secondary__socials li a {
+  text-decoration: none;
+  font-size: 0; }
+
+.secondary__socials li a:before {
+  font-family: "Glyphs";
+  color: white;
+  font-size: 2.6rem; }
+
+.secondary__socials__social-facebook:before {
+  content: '\f09a'; }
+
+.secondary__socials__social-twitter:before {
+  content: '\f099'; }
+
+.secondary__socials__social-googleplus:before {
+  content: '\f0d5'; }
+
+.secondary__socials__rss-feed:before {
+  content: '\f09e'; }
+
+footer aside section {
+  display: inline-block; }
+
+.primary {
+  width: 117rem;
+  margin: 0 auto; }
+  .primary__cols {
+    position: relative;
+    bottom: 2.8rem; }
+
+.primary,
+.primary__cols {
+  height: 300px; }
+
+.primary__cols__contact {
+  max-width: 37rem;
+  margin-right: 8rem; }
+  .primary__cols__contact h3 {
+    display: none; }
+  .primary__cols__contact p {
+    margin-top: 5.4rem;
+    margin-bottom: 3.5rem; }
+  .primary__cols__contact dl {
+    margin-bottom: 6rem; }
+  .primary__cols__contact dt {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    display: inline-block; }
+  .primary__cols__contact dd {
+    display: inline-block; }
+
+.primary__cols__sitemap,
+.primary__cols__community,
+.primary__cols__blog {
+  vertical-align: top; }
+
+.primary__cols__blog-articles {
+  margin-right: 0; }
+
+.primary__cols__blog li a {
+  height: 7rem;
+  margin-bottom: 2rem;
+  display: block; }
+  .primary__cols__blog li a li a:before {
+    content: "";
+    display: block;
+    clear: both; }
+
+.primary__cols__blog img {
+  border-radius: 4px;
+  float: left;
+  margin-right: 2rem; }
+
+.primary__cols__blog strong {
+  vertical-align: top; }
+
+.primary__cols__blog time {
+  vertical-align: top;
+  display: block; }
+
+.secondary {
+  height: 5.2rem; }
+
+.secondary__contener {
+  max-width: 117rem;
+  margin: 0 auto; }
+  .secondary__contener:before {
+    content: "";
+    display: block;
+    clear: both; }
+
+.secondary__legals {
+  display: inline-block;
+  position: relative;
+  top: 1.6rem; }
+
+.secondary__socials ul {
+  float: right;
+  position: relative;
+  top: -.35rem; }
+  .secondary__socials ul li {
+    margin-left: 2rem; }
+
+/*# sourceMappingURL=styles.css.map */
